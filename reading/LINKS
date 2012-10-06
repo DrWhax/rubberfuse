@@ -1,9 +1,16 @@
+Original rubberfuse:
+
+    git clone git://github.com/MerlijnWajer/rubberhose.git
+
 
 Crypto:
     http://marutukku.org/current/src_tour/
     http://marutukku.org/
     http://marutukku.org/current/src/SECURITY
     https://en.wikipedia.org/wiki/Deniable_encryption
+
+    http://marutukku.org/current/src/doc/review.html
+    https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis
 
 Linux:
     http://sourceforge.net/apps/mediawiki/fuse/index.php?title=Main_Page
