@@ -1,0 +1,24 @@
+
+Crypto:
+    http://marutukku.org/current/src_tour/
+    http://marutukku.org/
+    http://marutukku.org/current/src/SECURITY
+    https://en.wikipedia.org/wiki/Deniable_encryption
+
+Linux:
+    http://sourceforge.net/apps/mediawiki/fuse/index.php?title=Main_Page
+    https://en.wikipedia.org/wiki/Loop_device
+    https://en.wikipedia.org/wiki/Device_file
+
+    Possibly useful: https://github.com/gerard/ext4fuse
+    http://github.com/MerlijnWajer/tracy [Private, can provide access on
+        request]
+
+Related:
+    http://web.archive.org/web/20071214092723/
+    http://www.freenet.org.nz/phonebook/
+    https://en.wikipedia.org/wiki/StegFS
+    http://www.mcdonald.org.uk/StegFS/
+    http://www.schneier.com/blog/archives/2006/04/deniable_file_s.html
+    http://reboot78.re.funpic.de/cryptofs/
+    http://www.freeotfe.org/features.html
