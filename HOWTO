@@ -1,0 +1,38 @@
+- Fill image/disk with random data. (Indistinguishable from encrypted data)
+- Allocate as-needed, keep providing more room to any one section until the disk
+    has reached its partition.
+- Hide actual size even when decrypted: Total size 1GB: Part size 400MB. When
+    decrypted, show size of 1GB, with 600MB free space (if 400MB is in use)
+- Rubberhose section is called an ``aspect''
+- Each aspect has its own pass phrase and must be decrypted separately.
+- The entire rubberhose drive is an ``extent''.
+- Rubberhose relies on internal maps to locate where the actual bits of your
+    data are stored amid random characters.
+-   Works strictly on need to know. If you do not mount all partitions, then you
+    may overwrite data of other ``hidden'' partitions. To actually (safely) write
+    data, you need to mount all the partitions.
+
+Security features:
+    -   Time-based passwords (they expire after say 1 hour)
+    -   Anti-passphrase-cracking features (internal master password per aspect,
+    master password encrypted with your password)
+        Internal master aspect key unlocks everything in the aspect, including
+        the maps of where the bits of data are located across the drive and the
+        ability to actually decrypt that data.
+    -   Thwarthing Disk Surface Analysis.
+        Use strong pseudo-number generators; store seed encrypted, decrypted by
+        the internal aspect master password. (Read section 4.3 for more info)
+
+        Each aspect is in fact a ``view'' or ``map'' of a (large) amount of
+        blocks spread out over the entire disk in a random fashion.
+
+        Rubberhose often conducts block-swapping to thwart disk surface
+        analysis. (To protect against magnetic property analysis in combination
+        with statistical analysis).
+    -   Cryptanalytic attacks (Known plaintext attacks, etc)
+
+        Rubberhose also contains ``whitening code'', another security
+        feature designed to thwart cryptanalysis attacks, particularly
+        ``Known Plaintext attacks''. The whitener is made out of random
+        bits. Whitener also perturbs the encryption process in a
+        non-predictable manner.
