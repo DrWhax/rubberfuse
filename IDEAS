@@ -1,1 +1,2 @@
-Implement TRESOR support.
+* Implement TRESOR support for holding keys when Rubberfuse is running.
+* Use SSSS for sharing parts of a key and distribute them to N participants.
