@@ -12,6 +12,7 @@ convincingly deny that some encrypted information exists.
 Authors
 -------
 Jurre van Bergen
+
 Merlijn Wajer
 
 Revision history
@@ -27,7 +28,8 @@ Security Considerations
 	* User Scenarios
 
 * Technologies being used
-	* OpenSSL
+	* Nettle
+        * Libgcrypt
 	* FUSE
 	* SSSS
 	* TRESOR
