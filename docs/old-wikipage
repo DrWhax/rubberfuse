@@ -1,0 +1,68 @@
+= Introduction =
+
+A Rubberhose-fs clone, which has not seen active work since Linux 2.2. (See http://marutukku.org/ for the original project).
+Rubberfuse aims to provide deniable encryption.
+
+Motivation behind this project would be to have a decent secure file system, where oppressors and adversaries can't determine whether a file system
+has multiple encrypted partitions. This is very useful in oppressive countries like Burma, Iran and Belarus.
+
+The initial rubberhose prototypes will use FUSE. For system with better
+performance and a secure implementation we may switch to device mapper
+instead.
+
+If you would like to know more about the project, visit our IRC channel and
+subscribe to the mailing list.
+
+= Planning =
+
+Work on the project has started; we have been reading some papers and
+documentation of rubberhose as well as related work.
+
+More up-to-date information can be found on the github source repository.
+
+= Current Status =
+
+We have finished a small fuse prototype with support for one aspect; the next
+step will be to add support for multiple aspects, larger master blocks and add
+support for encrypting the blocks using the nettle library.
+
+= Architecture =
+
+= Planned Features =
+
+* Multiple containers
+* Plausible deniability
+
+= Future work =
+
+* Porting to portable devices? (Android/Meego) Not iOS, that's only for hipsters.
+
+= Repository =
+* https://github.com/techinc/rubberfuse
+* https://github.com/MerlijnWajer/rubberfuse
+
+= IRC =
+We idle and occasionally talk at: irc.freenode.net #rubberfuse
+
+= Mailinglist =
+Users can subscribe to our list by sending an email to
+rubberhose-request@freelists.org with 'subscribe' in the Subject field OR by
+visiting our list page at http://www.freelists.org/list/rubberhose
+
+= Things we need to investigate =
+
+* What are recent advances in filesystem and storage technology which could benefit this project?
+* Find out if certain security measures in Rubberhose are outdated and see if we can add new ones.
+
+= Brainstorm =
+
+References:
+* http://web.archive.org/web/20071214092723/
+* http://www.freenet.org.nz/phonebook/
+* https://en.wikipedia.org/wiki/StegFS
+* http://www.mcdonald.org.uk/StegFS/
+* http://www.schneier.com/blog/archives/2006/04/deniable_file_s.html
+* http://reboot78.re.funpic.de/cryptofs/
+* http://marutukku.org/
+* http://www.freeotfe.org/features.html
+
