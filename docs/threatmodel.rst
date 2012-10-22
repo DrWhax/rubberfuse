@@ -6,13 +6,11 @@ Contents
 
 Name and description
 --------------------
-Rubberfuse, is a modern equivelant of Rubberhose cryptography. It offers a plausible deniability filesystem where one can store information and
-convincingly deny that some encrypted information exists. 
+Rubberfuse, is a modern equivelant of Rubberhose cryptography. It offers a plausible deniability filesystem where one can store information and convincingly deny that this encrypted information exists by unlocking other filesystems which doesn't contain the secrets. 
 
 Authors
 -------
-Jurre van Bergen
-
+Jurre van Bergen\
 Merlijn Wajer
 
 Revision history
@@ -35,6 +33,8 @@ Security Considerations
 	* TRESOR
 
 3) Threats
+
+	* Cold-boot Attacks
 
 4) Vulnerabilities
 No vulnerabilities has been identified as of yet, if you find one, please act accordingly and notify the developers.
