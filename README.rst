@@ -10,3 +10,4 @@ Currently we will only focus on a linux build, we might port it to other platfor
 Contact
 -------
 Mailinglist: rubberhose@freelists.org
+IRC: irc.freenode.net #rubberfuse
